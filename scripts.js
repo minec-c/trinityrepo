@@ -1,7 +1,6 @@
 (function () {
   const imageContainer = document.querySelector('.Charactersp');
   const sprite = document.querySelector('.Mainspsheet');
-	var flip = false;
   const Charactersp = document.getElementById("Charactersp");
   let posX = 0, posY = 0; 				// Current position
   const speed = 2; 					// Pixels per frame
