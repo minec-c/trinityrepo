@@ -100,7 +100,7 @@ body {
     transform: translate3d(0px, 0, 0);
   }
   to {
-    transform: translate3d(-2*32px*var(--pixel-size)), 0, 0); /*-100%,0,0*/
+    transform: translate3d(calc(-2*32px*var(--pixel-size)), 0, 0); /*-100%,0,0*/
   }
 }
 @keyframes idlespsheet{
