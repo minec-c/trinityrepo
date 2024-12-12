@@ -105,9 +105,9 @@ body {
 }
 @keyframes idlespsheet{
   from {
-	  transform: translated3d(calc(-11*9.68px*var(--pixel-size)),0,0);
+	  transform: translate3d(calc(-11*9.68px*var(--pixel-size)),0,0);
   }
-  to {	  transform: translated3d(calc(-12*10.65px*var(--pixel-size)),0,0);
+  to {	  transform: translate3d(calc(-12*10.65px*var(--pixel-size)),0,0);
   }
 }
 .Greentreespdiv{
