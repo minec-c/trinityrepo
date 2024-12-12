@@ -42,22 +42,20 @@
         posX += Math.cos(angle) * speed;
         posY += Math.sin(angle) * speed;
 	setDirection(dX, dY);
+ 	sprite.classList.add('movespsheet');
+	sprite.classList.remove('idlespsheet');
       } 
       else {  	posX = targetX;
-        		posY = targetY;
+       		posY = targetY;
+	        sprite.classList.remove('movespsheet');
+		sprite.classList.add('idlespsheet');
               }
       imageContainer.style.transform = `translate(${posX}px, ${posY}px)`;
 	if(areImagesOverlapping(image1, image2))
 	{
 	updateDrawOrder(); //0512241744
 	}
-	if(distance > speed){
-		sprite.classList.add('movespsheet');
-		sprite.classList.remove('idlespsheet');
-	}
-	   else{	sprite.classList.remove('movespsheet');
-			sprite.classList.add('idlespsheet');
-	       }
+
       if (posX !== targetX || posY !== targetY) {
         animationFrameId = requestAnimationFrame(animate);
     	}
