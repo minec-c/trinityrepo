@@ -62,7 +62,8 @@ body {
 	}
 }
 .Mainspsheet {
-  animation: moveSpritesheet 1s steps(6) infinite;/*1s*/
+  animation: movespsheet 1s steps(6) infinite;/*1s*/
+  animation: idlespsheet 1s steps(2) infinite;/*1s*/
   width: calc(128px * var(--pixel-size));
   position: absolute;
   background: rgba(0,0,0,0);/*0.5*/
@@ -94,12 +95,19 @@ body {
 .dirw {
   top: calc(-74px * var(--pixel-size));
 }
-@keyframes moveSpritesheet {
+@keyframes movespsheet {
   from {
     transform: translate3d(0px, 0, 0);
   }
   to {
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-2*32px*var(--pixel-size)), 0, 0); /*-100%,0,0*/
+  }
+}
+@keyframes idlespsheet{
+  from {
+	  transform: translated3d(calc(-11*9.68px*var(--pixel-size)),0,0);
+  }
+  to {	  transform: translated3d(calc(-12*10.65px*var(--pixel-size)),0,0);
   }
 }
 .Greentreespdiv{
@@ -120,3 +128,10 @@ width:
  object-fit: contain;
  background:rgba(0,0,0,0.08);
 }
+.movespsheet{
+	animation: movespsheet 1s steps(6) infinite;
+}
+.idlespsheet{
+	animation: idlespsheet 1s steps(2) infinite;
+}
+
