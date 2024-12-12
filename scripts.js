@@ -51,6 +51,13 @@
 	{
 	updateDrawOrder(); //0512241744
 	}
+	if(distance > speed){
+		sprite.classList.add('movespsheet');
+		sprite.classList.remove('idlespsheet');
+	}
+	   else{	sprite.classList.remove('movespsheet');
+			sprite.classList.add('idlespsheet');
+	       }
       if (posX !== targetX || posY !== targetY) {
         animationFrameId = requestAnimationFrame(animate);
     	}
@@ -93,4 +100,5 @@ function areImagesOverlapping(img1, img2) {
 }
 const image1 = document.getElementById('image1');
 const image2 = document.getElementById('image2');
+
 })();
