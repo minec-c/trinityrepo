@@ -1,0 +1,7 @@
+.Mainspsheet {
+  animation: movespsheet 1s steps(6) infinite;/*1s*/
+  animation: idlespsheet 1s steps(2) infinite;/*1s*/
+  width: calc(128px * var(--pixel-size));
+  position: absolute;
+  background: rgba(0,0,0,0);/*0.5*/
+}
