@@ -1,0 +1,22 @@
+.movespsheet{
+	animation: movespsheet 1s steps(6) infinite;
+}
+.idlespsheet{
+	animation: idlespsheet 1s steps(2) infinite;
+}
+
+@keyframes movespsheet {
+  from {
+    transform: translate3d(0px, 0, 0);
+  }
+  to {
+    transform: translate3d(calc(-2*32px*var(--pixel-size)), 0, 0); /*-100%,0,0*/
+  }
+}
+@keyframes idlespsheet{
+  from {
+	  transform: translate3d(calc(-11*9.68px*var(--pixel-size)),0,0);
+  }
+  to {	  transform: translate3d(calc(-12*10.65px*var(--pixel-size)),0,0);
+  }
+}
