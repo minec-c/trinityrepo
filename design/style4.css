@@ -1,0 +1,5 @@
+	#rectangle{ 	width:50px;
+			height:50px;
+			background:rgba(0,333,333,0);/*0.2*/
+			margin: 0px 0px 0px 56px;//35wrong, 38right
+	}
