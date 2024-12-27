@@ -1,0 +1,10 @@
+.Charactersp {
+  width: calc(12px * var(--pixel-size));/*42.667*/
+  height: calc(12px * var(--pixel-size));
+  overflow: hidden;
+  background: rgba(0,330,222,0.03);/*0.1*/
+  position: absolute;
+	align-items:center;
+	display:flex;
+
+}
