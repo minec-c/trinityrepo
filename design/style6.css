@@ -1,0 +1,24 @@
+.dirsw {
+  top: calc(1px * var(--pixel-size));
+}
+.dirs {
+  top: calc(-10px * var(--pixel-size));//-40px
+}
+.dirse{
+  top:calc(-20.7px * var(--pixel-size));
+}
+.dire{
+  top:calc(-31.5px * var(--pixel-size));
+}
+.dirne{
+  top:calc(-42px * var(--pixel-size));
+}
+.dirn {
+  top: calc(-52.7px * var(--pixel-size));//-84px
+}
+.dirnw {
+  top: calc(-63.4px * var(--pixel-size));
+}
+.dirw {
+  top: calc(-74px * var(--pixel-size));
+}
