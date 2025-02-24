@@ -6,4 +6,5 @@
     } else {
       treesp.parentNode.insertBefore(treesp, imageContainer.nextSibling);
     }
+    
   }
