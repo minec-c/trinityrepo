@@ -47,7 +47,7 @@ jobs:
           
       - name: Download and decompress .pck file directly
         run: |
-          curl -L https://raw.githubusercontent.com/minec-c/trinityrepo/main/godotapk/exportgodotlab.pck.gz -o exportgodotlab.pck.gz
+          curl -L https://raw.githubusercontent.com/minec-c/trinityrepo/trinity/godotapk/exportgodotlab.pck.gz -o exportgodotlab.pck.gz
 
           if [ -f exportgodotlab.pck.gz ]; then
             echo "PCK file downloaded ✅"
